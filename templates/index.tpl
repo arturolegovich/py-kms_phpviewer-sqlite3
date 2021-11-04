@@ -11,6 +11,9 @@
 <meta name=keywords content=php py-kms>
 </head>
 <body>
+{if $Error }
+	<p>{$ErrorMessage}</p>
+{else}
 <table border=1 cellspacing=0 cellpadding=2 width=90% align=center>
 	<thead bgcolor=silver>
 	<tr>
@@ -36,5 +39,6 @@
 		<td>{$totalRequestCount}</td>
 	</tr>
 </table>
+{/if}
 </body>
 </html>
