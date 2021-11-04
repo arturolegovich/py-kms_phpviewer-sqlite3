@@ -5,6 +5,7 @@ $config["compile_dir"] = 'templates_c/';
 $config["config_dir"] = 'config/';
 $config["cache_dir"] = 'cache/';
 $config["caching"] = 2;
+$config["cache_lifetime"] = 120;
 $config["sqlite_dbpath"] = "/opt/var/sqlite/clients.db";
 $config["dateforamt"] = "d.m.Y H:i:s";
 ?>
