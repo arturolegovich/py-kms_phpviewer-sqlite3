@@ -39,6 +39,7 @@
 		<td>{$totalRequestCount}</td>
 	</tr>
 </table>
+<p align="center">© 2021 Artur Petrov, arturolegovich@gmail.com</p>
 {/if}
 </body>
 </html>
