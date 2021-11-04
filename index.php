@@ -10,7 +10,7 @@ $smarty->config_dir = $config["config_dir"];
 $smarty->cache_dir = $config["cache_dir"];
 $smarty->caching = $config["caching"];
 $smarty->cache_lifetime = $config["cache_lifetime"];
-$smarty->assign('config',$config);
+$smarty->assign("config",$config);
 
 $sqlite_dbpath = $config["sqlite_dbpath"];
 $smarty->assign("Error", false);
@@ -38,11 +38,11 @@ if (!file_exists($sqlite_dbpath)) {
 	$sql = "SELECT clientMachineId, machineName, applicationId, skuId, licenseStatus, lastRequestTime, kmsEpid, requestCount FROM clients";
 	$db = $dbh->prepare($sql);
 	$db->execute();
-	$smarty->assign('query', $db->fetchAll());
+	$smarty->assign("query", $db->fetchAll());
 	$db = NULL;
 	$dbh = NULL;
 }
 
 //$smarty->debugging = true;
-$smarty->display('index.tpl');
+$smarty->display("index.tpl");
 ?>
