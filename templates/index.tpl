@@ -40,12 +40,12 @@
 	</tbody>
 	<tfoot>
 	<tr class="header">
-		<td colspan=5><b>Total request count:</b></td>
+		<td colspan=5><b>Total requests count:</b></td>
 		<td>{$totalRequestCount}</td>
 	</tr>
 	</tfoot>
 </table>
-<p align="center">© 2021 arturolegovich, arturolegovich@gmail.com</p>
+<!-- <p align="center">© 2021 arturolegovich, arturolegovich@gmail.com</p> -->
 {/if}
 </body>
 </html>
