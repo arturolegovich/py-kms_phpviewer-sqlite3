@@ -29,7 +29,7 @@
 		<td>{$name.applicationId}</td>
 		<td>{$name.skuId}</td>
 		<td title={$name.kmsEpid}>{$name.licenseStatus}</td>
-		<td>{$name.lastRequestTime|date_format:$config.dateforamt}</td>
+		<td>{$name.lastRequestTime|date_format:$config.dateformat}</td>
 		<td>{$name.requestCount}</td>
 	</tr>
 	{foreachelse}
